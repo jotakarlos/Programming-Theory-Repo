@@ -321,9 +321,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 235832222}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 730cea5f8f053d84a8f124dd40df09c6, type: 3}
+  m_Script: {fileID: 11500000, guid: de642e148e26c68448da3777404a0450, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerController: {fileID: 561059618}
 --- !u!1 &561059613
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,7 +341,7 @@ GameObject:
   - component: {fileID: 561059619}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -463,9 +464,10 @@ GameObject:
   - component: {fileID: 1161802335}
   - component: {fileID: 1161802334}
   - component: {fileID: 1161802333}
+  - component: {fileID: 1161802336}
   m_Layer: 0
-  m_Name: Cylinder
-  m_TagString: Untagged
+  m_Name: Arma
+  m_TagString: Arma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -492,7 +494,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1161802331}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5000001
   m_Height: 2
@@ -547,6 +549,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1161802331}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1161802336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161802331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e395e95864935c4c8741a76855e257a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageArma: 1
 --- !u!1 &1410546373
 GameObject:
   m_ObjectHideFlags: 0
@@ -653,9 +668,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1410546373}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b66228dfe7bfb90459b30f9783071a3b, type: 3}
+  m_Script: {fileID: 11500000, guid: abefc451109460a40a2e6616cb64335c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerController: {fileID: 561059618}
 --- !u!54 &1410546379
 Rigidbody:
   m_ObjectHideFlags: 0
